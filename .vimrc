@@ -14,7 +14,7 @@ set showmatch                   " show matching brackets
 set showbreak=...               " show '...' if line is longer than screen
 set mat=5                       " how many tenths of a second to blink matching brackets
 set incsearch                   " show search matches as you type
-set lines=50                    " height
+" set lines=50                    " height
 set novisualbell                " no error bells
 set noerrorbells                " no error bells
 set title                       " sets the title
