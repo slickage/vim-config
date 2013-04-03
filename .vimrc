@@ -165,12 +165,12 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'Lokaltog/powerline.git', {'rtp': 'powerline/powerline/bindings/vim/plugin/'}
 Bundle 'vim-scripts/ScrollColors'
+Bundle 'kien/ctrlp.vim'
 
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-" non github repos
-Bundle 'git://git.wincent.com/command-t.git'
+
 " ...
 
 filetype plugin indent on     " required!
