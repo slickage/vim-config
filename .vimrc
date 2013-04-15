@@ -19,7 +19,7 @@ set novisualbell                " no error bells
 set noerrorbells                " no error bells
 set title                       " sets the title
 set wildmenu                    " show autocomplete options
-set textwidth=79                " sets the text width
+set textwidth=120               " sets the text width
 set tabpagemax=10 		" show 10 tabs
 
 " search
@@ -36,6 +36,52 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 set gdefault                    " the /g flag on :s substitutions by default
+
+
+set modeline                    " respect other
+set encoding=utf-8              " use utf-8 encoding
+
+set number                      " set line numbers
+
+set ruler                       " show ruler
+set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+
+set laststatus=2                " always show last status
+
+set history=1000                " 1000 lines of history
+set undolevels=1000             " 1000 levels of undo
+set clipboard=unnamed           " share clipboard with win
+set ffs=unix,dos,mac            " set file format to unix, win, then old mac
+set hidden                      " enable hidden files
+set backspace=indent,eol,start  " enable backspace over indent, EOL, START
+
+if has("undodir")
+    set undodir=$HOME/.vim_undo " directory to store backup files
+    set undofile                " save undo history to an undo file"
+    if ! isdirectory(expand(&undodir))
+        call mkdir(&undodir, 'p', 0700 )
+    endif
+endif
+
+set backupext=.bak               " append .bak to backup files
+
+set backupdir=$HOME/.vim_backups " directory to store backup files
+if ! isdirectory(expand(&backupdir))
+    call mkdir(&backupdir, 'p', 0700)
+endif
+
+set directory=$HOME/.vim_swaps   " directory to store swap files
+if ! isdirectory(expand(&directory))
+    call mkdir(&directory, 'p', 0700)
+endif
+
+set autowrite                    " enable buffers to be saved on suspend
+" }}}
+
+" Theme {{{
+if has("syntax")
+    syntax on
+endif
 
 " cmd line
 " change working directory to that of file
