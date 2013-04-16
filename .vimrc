@@ -4,7 +4,8 @@ if has("syntax")
   syntax on
 endif
 set background=dark             " sets the background color (I like it dark)
-colorscheme desert              " colorscheme
+"colorscheme desert             " colorscheme
+colorscheme twilight            " colorscheme
 
 set cursorline                  " highlight current line
 
