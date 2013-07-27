@@ -116,6 +116,12 @@ map <C-h> <C-W>h
 " make Y act like C/D
 nmap Y y$
 
+" fuzzyfinder
+nmap ,f :FufFileWithCurrentBufferDir<CR>
+nmap ,b :FufBuffer<CR>
+nmap ,t :FufTaggedFile<CR>
+
+
 " ; for : in normal/visual
 nnoremap ; :
 vnoremap ; :
@@ -231,3 +237,5 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
