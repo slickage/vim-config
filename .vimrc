@@ -219,6 +219,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'Lokaltog/powerline.git', {'rtp': 'powerline/powerline/bindings/vim/plugin/'}
 Bundle 'vim-scripts/ScrollColors'
 Bundle 'kien/ctrlp.vim'
+Bundle 'kchmck/vim-coffee-script'
 
 " vim-scripts repos
 Bundle 'L9'
