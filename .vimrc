@@ -1,11 +1,11 @@
 set nocompatible                " be iMproved
-set guifont=Droid\ Sans\ Mono\ for\ Powerline:h12
+set guifont=Consolas:h12
 if has("syntax")
   syntax on
 endif
 set background=dark             " sets the background color (I like it dark)
 "colorscheme desert             " colorscheme
-colorscheme twilight            " colorscheme
+colorscheme slate               " colorscheme
 
 set cursorline                  " highlight current line
 
